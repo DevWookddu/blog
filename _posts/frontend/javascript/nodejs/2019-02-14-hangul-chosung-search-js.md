@@ -36,9 +36,9 @@ npm install hangul-chosung-search-js
 
 ChosungSearch라는 변수로 전역에 노출됩니다.
 
-```js
+{% highlight javascript %}
 window.ChosungSearch
-```
+{% endhighlight %}
 
 ### node.js 사용 방법
 
