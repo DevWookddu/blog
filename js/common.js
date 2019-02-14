@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  if (scrollElement.scrollHeight - 30 <= window.innerHeight + scrollY) {
+  if (scrollElement.scrollHeight - 30 <= window.innerHeight + (window.scrollY || pageYOffset)) {
     footer.classList.add('active');
   }
   
