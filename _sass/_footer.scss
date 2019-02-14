@@ -1,0 +1,15 @@
+@charset 'utf-8';
+
+.footer {
+  position: fixed;
+  bottom: -$footer-height;
+  height: $footer-height;
+  width: 100%;
+  background-color: $dark-grey;
+  z-index: $z-index-footer;
+  transition: .3s;
+
+  &.active {
+    bottom: 0;
+  }
+}

@@ -1,0 +1,27 @@
+<div class="aside" id="aside">
+  <div class="blog-name">
+    <a href="{{ site.baseurl }}/">DevWooklog</a>
+  </div>
+  <ul class="menu-container">
+    {% for menu in site.data.menus %}
+      <li class="menu">
+        <span class="menu-text">{{ menu[0] }}</span>
+        <ul class="depth2List">
+          {% for depth2 in menu[1] %}
+            <a href="{{ site.baseurl }}/tags/{{ depth2.name | downcase }}">
+              <li class="depth2">{{ depth2.name }}</li>
+            </a>
+            <ul class="depth3List">
+              {% for depth3 in depth2.child %}
+                <a href="{{ site.baseurl }}/tags/{{ depth3.name | downcase }}">
+                  <li class="depth3">{{ depth3.name }}</li>
+                </a>
+              {% endfor %}
+            </ul>
+          {% endfor %}
+        </ul>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+<div class="aside-background" id="aside-background"></div>

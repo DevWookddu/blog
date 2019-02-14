@@ -1,0 +1,7 @@
+@charset 'utf-8';
+
+@mixin textOverflow {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}

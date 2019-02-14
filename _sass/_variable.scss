@@ -1,0 +1,26 @@
+@charset 'utf-8';
+
+
+// size
+$content-max-width: 1024px;
+$footer-height: 60px;
+
+// color
+$background-color: #fafafa;
+
+$light-grey: #CFD8DC;
+$grey: #546E7A;
+$dark-grey: #263238;
+
+$light-blue: #81D4FA;
+$blue: #039BE5;
+$dark-blue: #01579B;
+
+
+// z-index
+$z-index-page-top: 0;
+$z-index-header: 1;
+$z-index-footer: 1;
+$z-index-aside-background: 2;
+$z-index-aside: 3;
+$z-index-bar-container: 4;

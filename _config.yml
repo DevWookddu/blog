@@ -1,0 +1,33 @@
+# site setting
+title: Devwookddu Blog
+author: Jeong Yongwook
+description: 개인 기술 블로그
+email: devwookddu@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Hello
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# twitter_username: jekyllrb
+github_username:  DevWookddu
+
+# collections
+collections:
+  tags:
+    output: true
+    permalink: /tags/:path/
+
+defaults:
+  - scope:
+      path: ''
+      type: tags
+    values:
+      layout: tag
+
+
+# build settings
+port: 4000
+markdown: kramdown
+highlighter: rouge
+
+sass:
+  sass_dir: _sass
