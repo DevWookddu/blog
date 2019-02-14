@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   var scrollToggle = function() {
-    if (scrollElement.scrollTop > 400 || scrollElement.scrollTop > 400) {
+    if (scrollElement.scrollTop > 400) {
       header.classList.add('scroll');
       barContainer.classList.add('scroll');
     } else {
@@ -39,8 +39,8 @@ document.addEventListener('DOMContentLoaded', function() {
   barContainer.addEventListener('click', activeToggle);
   asideBackground.addEventListener('click', activeToggle);
 
-  window.onscroll = function() {
+  window.addEventListener('scroll', function() {
     scrollToggle();
     footerToggle();
-  }
+  });
 });
