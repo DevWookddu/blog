@@ -17,20 +17,20 @@ document.addEventListener('DOMContentLoaded', function() {
   var scrollToggle = function() {
     var throttleFlag = false;
     return function () {
-      var scrollY = window.scrollY || pageYOffset;
-      pageTop.style.opacity = (400 - scrollY) / 400;
+      pageTop.style.opacity = (400 - window.scrollY || pageYOffset) / 400;
       if (throttleFlag === false) {
         throttleFlag = true
-        if (scrollY > 400) {
-          header.classList.add('scroll');
-          barContainer.classList.add('scroll');
-        } else {
-          header.classList.remove('scroll');
-          barContainer.classList.remove('scroll');
-        }
         setTimeout(function() {
+          var scrollY = window.scrollY || pageYOffset;
+          if (scrollY > 400) {
+            header.classList.add('scroll');
+            barContainer.classList.add('scroll');
+          } else {
+            header.classList.remove('scroll');
+            barContainer.classList.remove('scroll');
+          }
           throttleFlag = false
-        }, 200);
+        }, 100);
       }
     }
   }();
