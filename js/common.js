@@ -14,31 +14,45 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   var scrollToggle = function() {
-    if (scrollElement.scrollTop > 400) {
-      header.classList.add('scroll');
-      barContainer.classList.add('scroll');
-    } else {
-      header.classList.remove('scroll');
-      barContainer.classList.remove('scroll');
+    var throttleFlag = false;
+    return function () {
+      if (throttleFlag === false) {
+        throttleFlag = true
+        var scrollY = window.scrollY || pageYOffset;
+        if (scrollY > 400) {
+          header.classList.add('scroll');
+          barContainer.classList.add('scroll');
+        } else {
+          header.classList.remove('scroll');
+          barContainer.classList.remove('scroll');
+        }
+        setTimeout(function() {
+          throttleFlag = false
+        }, 200);
+      }
     }
-  }
-
-  var footerToggle = function() {
-    var scrollY = window.scrollY || pageYOffset;
-    if (scrollElement.scrollHeight - 30 <= window.innerHeight + scrollY) {
-      footer.classList.add('active');
-    } else {
-      footer.classList.remove('active');
-    }
-  }
-
-  if (scrollElement.scrollHeight - 30 <= window.innerHeight + (window.scrollY || pageYOffset)) {
-    footer.classList.add('active');
-  }
+  }();
   
+  var footerToggle = function() {
+    var debounceFunc = null;
+    return function() {
+      if (debounceFunc) {
+        clearTimeout(debounceFunc);
+      }
+      debounceFunc = setTimeout(function() {
+        var scrollY = window.scrollY || pageYOffset;
+        if (scrollElement.scrollHeight - 30 <= (window.innerHeight + scrollY)) {
+          footer.classList.add('active');
+        } else {
+          footer.classList.remove('active');
+        }
+      }, 100);
+    }
+  }();
+  
+  footerToggle();
   barContainer.addEventListener('click', activeToggle);
   asideBackground.addEventListener('click', activeToggle);
-
   window.addEventListener('scroll', function() {
     scrollToggle();
     footerToggle();

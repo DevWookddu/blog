@@ -21,9 +21,9 @@ background: nodejs
 
 ## install
 
-```
+{% highlight bash %}
 npm install hangul-chosung-search-js
-```
+{% endhighlight %}
 
 ### CDN 방식 사용 방법
 

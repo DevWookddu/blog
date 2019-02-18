@@ -23,9 +23,14 @@ defaults:
     values:
       layout: tag
 
+paginate: 10
+plugins:
+  - jekyll-paginate
 
 # build settings
 port: 4000
+host: 218.232.122.57
+
 markdown: kramdown
 highlighter: rouge
 
