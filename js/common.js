@@ -17,11 +17,11 @@ document.addEventListener('DOMContentLoaded', function() {
   var scrollToggle = function() {
     var throttleFlag = false;
     return function () {
-      pageTop.style.opacity = (400 - (window.scrollY || pageYOffset)) / 400;
       if (throttleFlag === false) {
         throttleFlag = true
         setTimeout(function() {
           var scrollY = window.scrollY || pageYOffset;
+          pageTop.style.opacity = (400 - scrollY) / 400;
           if (scrollY > 400) {
             header.classList.add('scroll');
             barContainer.classList.add('scroll');
