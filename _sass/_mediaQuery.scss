@@ -12,13 +12,10 @@
   .post-wrapper {
     border-bottom: 1px solid $light-grey;
     margin-bottom: 5px;
+    display: flex;
   }
   .post {
-    font-size: 16px;
     padding-left: 15px;
     padding-right: 15px;
-    &-title {
-      display: block;
-    }
   }
 }

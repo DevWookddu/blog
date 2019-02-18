@@ -4,7 +4,7 @@
   <body>
     {% include header.html %}
     {% include aside.html %}
-    <div class="page-top {{ page.background }}">
+    <div class="page-top {{ page.background }}" id="page-top">
       <div class="page-top__container">
         <div class="page-top__container-title">
           {% if page.type == 'tags' %}#{% endif %}{{ page.title }}

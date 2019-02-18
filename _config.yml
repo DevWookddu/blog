@@ -30,7 +30,7 @@ plugins:
 
 # build settings
 port: 4000
-host: devwookddu.github.io
+host: 218.232.122.57
 
 markdown: kramdown
 highlighter: rouge

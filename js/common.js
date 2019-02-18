@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   var header = document.getElementById('header');
+  var pageTop = document.getElementById('page-top')
   var barContainer = document.getElementById('bar-container');
   var aside = document.getElementById('aside');
   var asideBackground = document.getElementById('aside-background');
@@ -16,9 +17,10 @@ document.addEventListener('DOMContentLoaded', function() {
   var scrollToggle = function() {
     var throttleFlag = false;
     return function () {
+      var scrollY = window.scrollY || pageYOffset;
+      pageTop.style.opacity = (400 - scrollY) / 400;
       if (throttleFlag === false) {
         throttleFlag = true
-        var scrollY = window.scrollY || pageYOffset;
         if (scrollY > 400) {
           header.classList.add('scroll');
           barContainer.classList.add('scroll');

@@ -4,6 +4,9 @@
   color: #75715e;
   font-style: italic;
 }
+.highlight .vglnk { /* disqus 라이브러리가 강제로 신택스 링크 처리 */
+  color: #e6db74 !important;
+}
 .highlight .cm {
   color: #75715e;
   font-style: italic;
