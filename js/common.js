@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var scrollToggle = function() {
     var throttleFlag = false;
     return function () {
-      pageTop.style.opacity = (400 - window.scrollY || pageYOffset) / 400;
+      pageTop.style.opacity = (400 - (window.scrollY || pageYOffset)) / 400;
       if (throttleFlag === false) {
         throttleFlag = true
         setTimeout(function() {
