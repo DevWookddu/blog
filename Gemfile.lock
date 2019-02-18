@@ -63,7 +63,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 3.8.5)
-  jekyll-paginate
+  jekyll-paginate (~> 1.1.0)
   kramdown
   rouge
   tzinfo-data

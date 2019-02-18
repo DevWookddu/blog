@@ -23,13 +23,14 @@ defaults:
     values:
       layout: tag
 
-paginate: 10
+paginate: 5
+paginate_path: "/page/:num/"
 plugins:
   - jekyll-paginate
 
 # build settings
 port: 4000
-host: 218.232.122.57
+host: devwookddu.github.io
 
 markdown: kramdown
 highlighter: rouge
