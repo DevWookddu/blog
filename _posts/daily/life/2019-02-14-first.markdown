@@ -4,7 +4,7 @@ title: "블로그 첫 글"
 date: 2019-02-14 18:20:00 +0900
 tags: daily life
 categories: daily
-identifier: "dl1"
+identifier: dl1
 ---
 
 # 블로그 첫 글

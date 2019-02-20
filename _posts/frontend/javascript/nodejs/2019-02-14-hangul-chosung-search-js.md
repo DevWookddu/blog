@@ -5,7 +5,7 @@ date: 2019-02-14 18:30:00 +0900
 tags: javascript nodejs
 categories: nodejs
 background: nodejs
-identifier: 'jn1'
+identifier: jn1
 ---
 
 처음으로 npm에 등록했던 오픈소스이다. [(링크)](https://www.npmjs.com/package/hangul-chosung-search-js)<br>
