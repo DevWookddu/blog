@@ -11,8 +11,6 @@ description: '프로그래머스 모의고사 풀이'
 
 # 완전탐색 레벨 1. 모의고사
 
-
-
 {% highlight javascript %}
 function solution(answers) {
     var answer = [];
