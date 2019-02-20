@@ -3,7 +3,7 @@ layout: post
 title: "블로그 첫 글"
 date: 2019-02-14 18:20:00 +0900
 tags: daily life
-category: daily
+categories: daily
 identifier: "dl1"
 ---
 

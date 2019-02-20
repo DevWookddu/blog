@@ -3,7 +3,7 @@ layout: post
 title: "첫 노드 모듈 패키지!"
 date: 2019-02-14 18:30:00 +0900
 tags: javascript nodejs
-category: nodejs
+categories: nodejs
 background: nodejs
 identifier: 'jn1'
 ---
