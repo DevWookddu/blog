@@ -8,6 +8,9 @@ Frontend:
 #   - name: CSS
 #   - name: Webpack
 
+Study:
+  - name: Algorithm
+
 # Backend:
 #   - name: Java
 
