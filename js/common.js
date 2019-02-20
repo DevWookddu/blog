@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         throttleFlag = true
         setTimeout(function() {
           var scrollY = window.scrollY || pageYOffset;
-          pageTop.style.opacity = (400 - scrollY) / 400;
+          pageTop.style.opacity = (800 - scrollY) / 800;
           if (scrollY > 400) {
             header.classList.add('scroll');
             barContainer.classList.add('scroll');
