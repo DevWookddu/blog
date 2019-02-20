@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "프로그래머스: 완주하지 못한 선수"
+keywords: 프로그래머스 완주하지못한선수 알고리즘 해시
+description: '프로그래머스 완주하지 못한 선수 풀이'
 date: 2019-02-19 14:20:00 +0900
 tags: study algorithm level1
 ---

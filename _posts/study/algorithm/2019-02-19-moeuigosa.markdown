@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "프로그래머스: 모의고사"
+keywords: 프로그래머스 모의고사 알고리즘 완전탐색
+description: '프로그래머스 모의고사 풀이'
 date: 2019-02-19 14:20:00 +0900
 tags: study algorithm level1
-keywords: 프로그래머스 모의고사 알고리즘
-description: '프로그래머스 모의고사 풀이'
 ---
 
 # [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/42840)
