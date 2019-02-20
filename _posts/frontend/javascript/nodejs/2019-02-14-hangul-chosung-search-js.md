@@ -3,7 +3,9 @@ layout: post
 title: "첫 노드 모듈 패키지!"
 date: 2019-02-14 18:30:00 +0900
 tags: javascript nodejs
+category: nodejs
 background: nodejs
+identifier: 'jn1'
 ---
 
 처음으로 npm에 등록했던 오픈소스이다. [(링크)](https://www.npmjs.com/package/hangul-chosung-search-js)<br>
